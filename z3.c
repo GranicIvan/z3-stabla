@@ -57,7 +57,6 @@ ptica* ucitaj(char fajl[30]){
   
 
     for(int i =0; i <n; i++){
-        printf("a i=%d \n",i);
 
          ptica* temp = malloc(sizeof(ptica) );
 
@@ -65,12 +64,9 @@ ptica* ucitaj(char fajl[30]){
         fscanf(f, "%d", &temp->id);
         fscanf(f, "%s", temp->naziv);
 
-        printf("b i=%d \n",i);
 
         // ubaci_pticu(&koren, temp);  
-        dodaj_cvor(&koren, temp) ;
-
-        printf("c i=%d \n",i);     
+        dodaj_cvor(&koren, temp) ;  
 
 
     } 
